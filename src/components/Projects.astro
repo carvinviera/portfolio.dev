@@ -1,0 +1,63 @@
+---
+import GitHub from "./icons/GitHub.astro"
+import NextJSIcon from "./icons/NodeJS.astro"
+import PlaywrightIcon from "./icons/Playwright.astro"
+import JavaScriptIcon from "./icons/JavaScript.astro"
+//import Link from "./icons/Link.astro"
+//import LinkButton from "./LinkButton.astro"
+
+const TAGS = {
+  NODE: {
+    name: "Node.js",
+    class: "bg-white text-[#70a660]",
+    icon: NextJSIcon,
+  },
+  PLAYWRIGHT: {
+    name: "Playwright",
+    class: "bg-[#45ba4b] text-black",
+    icon: PlaywrightIcon,
+  },
+  JAVASCRIPT: {
+    name: "JavaScript",
+    class: "bg-[#efd81d] text-black",
+    icon: JavaScriptIcon,
+  },
+}
+
+const PROJECTS = [
+  {
+    title: "Bonvivir Automation Test End to End",
+    description:
+      "Se creo desde cero un proyecto integrador para realizar test automáticos end to end sobre las principales funcionalidades de carrito de compras. Usando librerias propias del equipo de dasarrollo de test Seo y test de Contenido",
+    link: "https://bonvivir.com/",
+    github: "",
+    image: "/projects/bonvi.webp",
+    tags: [TAGS.NODE, TAGS.PLAYWRIGHT, TAGS.JAVASCRIPT],
+  },
+]
+---
+
+{   
+    PROJECTS.map(({ image, title, description, tags, link, github }) => (
+    //flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0"
+        <article>
+            <h3 class="text-2xl font-bold text-yellow-200 mb-2">
+                {title}
+            </h3>
+            <p class="text-lg mb-4 text-pretty">{description}</p>
+            <ul class={`flex gap-x-2 flex-row`}>
+                {
+                    tags.map((tag) =>(
+                        <li>
+                        <span class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2`}>
+                            <tag.icon class="size-4" /> 
+                            {tag.name}
+                        </span>
+                        </li>
+                    ))
+                }
+            </ul>
+            <img class="rounded shadow-2xl shadow-white/10" src={image} alt={`Captura de pantalla del proyecto ${image}`} />
+        </article>
+    ))
+}

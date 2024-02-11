@@ -1,0 +1,68 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Badge from '../components/Badge.astro';
+import LinkedInIcon from '../components/icons/LinkedIn.astro';
+import GitHubIcon from '../components/icons/GitHub.astro';
+import BriefCaseIcon from '../components/icons/BriefCase.astro';
+import CodeIcon from '../components/icons/Code.astro';
+import SocialPill from '../components/SocialPill.astro';
+import MailIcon from '../components/icons/Mail.astro';
+import Experience from '../components/Experience.astro';
+import Projects from '../components/Projects.astro';
+import SectionContainer from '../components/SectionContainer.astro';
+---
+
+<Layout title="Portfolio Carvin Viera - Desarrollador y Programador" description="Crear un buen description"> 
+	<!-- agregar palabras de interes para google -->
+	<!-- agregar palabras de interes para google  description-->
+	<main class="px-4">
+		<SectionContainer class="py-44 pb-32">	
+			<img
+				class="rounded-full size-12 mb-4"
+				src="https://media.licdn.com/dms/image/C4D03AQHi3D-LatvrJw/profile-displayphoto-shrink_200_200/0/1517223934047?e=2147483647&v=beta&t=ww7wWpcFeiX3Ny-mccVN87aN9VX0EKgGe_fFdkfzUMs" 
+				alt="Carvin Jourdan Viera Sanoja photo" 
+			/>
+			<h1 class="text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">
+				Hey, soy Carvin Viera <a href="https://www.linkedin.com/in/carvin-jourdan-viera-sanoja-725b70133/" target="_blank" rel="noopener" class="flex justify-center items-center">
+					<Badge>Disponible para trabajar</Badge> 
+				</div>
+			</h1>
+			<h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
+				<span>+7 Años de Experiencia.</span>
+				<span class="text-yellow-200/90"> Desarrollador .Net</span> 
+				<span class="text-red-200/90"> En Madrid España.</span> 
+				<span class="opacity-75">Alto interés en crecer como desarrollador y aportar mis conocimientos</span> 
+			</h2>
+			<nav class="flex gap-4 mt-8 flex-wrap">
+				<SocialPill  href="https://www.linkedin.com/in/carvin-jourdan-viera-sanoja-725b70133/">
+					<LinkedInIcon class="size-4 md:size-6" />
+					LinkedIn
+				</SocialPill>
+				<SocialPill  href="https://github.com/carvinviera">
+					<GitHubIcon class="size-4 md:size-6" />
+					GitHub
+				</SocialPill>
+				<SocialPill href="mailto:cjvs_carvinviera@hotmail.com">
+					<MailIcon class="size-4 md:size-6" />
+					cjvs_carvinviera@hotmail.com
+				</SocialPill>
+			</nav>
+		</SectionContainer>
+		<!-- <div class="space-y-24"> -->
+		<SectionContainer id="experiencia">
+			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center py-4"> 
+				<BriefCaseIcon class="size-7" />	
+				Experiencia Laboral
+			</h2>
+			<Experience />
+		</SectionContainer>
+
+		<SectionContainer id="proyectos">
+			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center"> 
+				<CodeIcon class="size-7" />	
+				Proyectos
+			</h2>
+			<Projects />
+		</SectionContainer>
+	</main>
+</Layout>
