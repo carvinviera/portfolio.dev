@@ -1,0 +1,77 @@
+---
+const personalImageAlt = "Miguel Ángel"
+import Badge from "@/components/Badge.astro"
+import LinkedInIcon from "@/components/icons/LinkedIn.astro"
+import MailIcon from "@/components/icons/Mail.astro"
+import SocialPill from "@/components/SocialPill.astro"
+---
+
+<div class="max-w-2xl mx-auto">
+  <div class="flex gap-4 mb-4">
+    <!-- <img
+      class="rounded-full shadow-lg size-16"
+      src="/midudev.webp"
+      alt={personalImageAlt}
+    /> -->
+    <img
+      class="rounded-full shadow-lg size-16"
+      src="https://media.licdn.com/dms/image/v2/D4D35AQHQ_jxgoff3cQ/profile-framedphoto-shrink_400_400/B4DZY5drbWHsAc-/0/1744720803873?e=1758207600&v=beta&t=mjcqOuFMoZ74UQk8WiYdCyet2dD0wkp_dhRIUZeNv4Y"
+    />
+    <a
+      href="https://linkedin.com/in/midudev"
+      target="_blank"
+      rel="noopener"
+      class="flex items-center transition md:justify-center md:hover:scale-105"
+    >
+      <Badge>Disponible para trabajar</Badge>
+    </a>
+  </div>
+  <h1
+    class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
+  >
+    Hola, soy Carvin Viera
+  </h1>
+  <p
+    class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
+  >
+  💻 Desarrollador .NET | QA Automation | C# | MVC | Web | Entity Framework | .NET Core
+  </p>
+  <p
+    class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
+  >
+  👨‍💻 Tecnologías: .NET Core, C#, ASP.NET MVC, Entity Framework, Web APIs, SQL Server, CI/CD en Azure y AWS
+  <p
+    class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
+  >
+  🌐 Frontend: JavaScript, HTML, CSS, jQuery, Bootstrap
+  </p>
+  <p
+    class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
+  >
+  🛠 QA Automation: Playwright, Selenium, Pruebas de UI, Pruebas End-to-End (E2E), Casos de uso, Integración continua (CI/CD), DATADOG
+  </p>
+  <p
+    class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
+  >
+  🚀 Enfoque: Desarrollo de aplicaciones web escalables, procesos y flujos de data, automatización de pruebas, buenas prácticas y mejora continua
+  </p>
+  <p
+    class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300 text-justify"
+    >
+    Desarrollador .NET y QA Automation con <strong>
+      +7 años de experiencia</strong> en el ciclo completo de desarrollo de aplicaciones web. 
+      Titulado como <strong>Técnico Superior Universitario en Informática</strong>, 
+      especializado en las tecnologías mencionadas y mejora continua de procesos de software. 
+      Actualmente en España, en búsqueda de integrarme al mercado tecnológico local.
+  </p>
+  <nav class="flex flex-wrap gap-4 mt-8">
+    <SocialPill href="mailto:carvinvieraas@gmail.com">
+      <MailIcon class="size-4" />
+      Contáctame
+    </SocialPill>
+    <SocialPill href="https://linkedin.com/in/carvin-jourdan-viera-sanoja-725b70133">
+      <LinkedInIcon class="size-4" />
+      LinkedIn
+    </SocialPill>
+  </nav>
+</div>
