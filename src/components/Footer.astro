@@ -3,18 +3,18 @@ const currentYear = new Date().getFullYear()
 ---
 
 <footer
-  class="opacity-80 m-4 min-[375px]:pl-4 md:pl-0 mt-16 w-full mx-auto container lg:max-w-4xl md:max-w-2xl mb-10 flex justify-center"
+  class="fixed bottom-0 left-0 z-50 w-full opacity-80 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-md border-t border-gray-200 dark:border-gray-700"
 >
   <div
-    class="rounded-lg w-full max-w-screen-xl mx-auto md:flex md:items-center md:justify-between py-4"
+    class="rounded-lg w-full max-w-screen-xl mx-auto md:flex md:items-center md:justify-between py-4 px-4"
   >
     <span class="text-sm sm:text-center text-zinc-800/90 dark:text-zinc-200/90"
-      >&copy; {currentYear}
+    >&copy; {currentYear}
       <a href="linkedin.com/in/carvin-jourdan-viera-sanoja-725b70133" class="hover:underline">Carvin Viera</a>. Derechos reservados
     </span>
-    <ul
+    <ul 
       class="flex flex-wrap items-center mt-3 text-sm font-medium dark:text-white/90 sm:mt-0"
-    >
+      >
       <li>
         <a href="/#sobre-mi" class="hover:underline me-4 md:me-6">Sobre mí</a>
       </li>
@@ -24,3 +24,4 @@ const currentYear = new Date().getFullYear()
     </ul>
   </div>
 </footer>
+
