@@ -5,7 +5,7 @@ import { fileURLToPath } from "url";
 import netlify from "@astrojs/netlify"; // <-- 1. IMPORTA EL ADAPTADOR
 
 export default defineConfig({
-  output: 'server', // <-- 2. ASEGÚRATE DE TENER ESTA LÍNEA
+  output: 'server',
   integrations: [
     tailwind(), 
     robotsTxt(), 
@@ -18,5 +18,6 @@ export default defineConfig({
         "@": fileURLToPath(new URL("./src", import.meta.url))
       }
     }
-  }
+  },
+  adapter: netlify()
 });

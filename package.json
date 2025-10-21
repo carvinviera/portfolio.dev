@@ -6,7 +6,6 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro check && astro build",
-    "buildNetfily": "CI=false astro build --experimental-ssr",
     "preview": "astro preview",
     "astro": "astro"
   },
