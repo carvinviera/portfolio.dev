@@ -2,14 +2,14 @@ import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 import robotsTxt from "astro-robots-txt";
 import { fileURLToPath } from "url";
-import netlify from "@astrojs/netlify"; // <--- 1. IMPORTAR
+import netlify from "@astrojs/netlify"; // <-- 1. IMPORTA EL ADAPTADOR
 
 export default defineConfig({
-  output: 'server', // <--- 2. AÑADIR ESTA LÍNEA
+  output: 'server', // <-- 2. ASEGÚRATE DE TENER ESTA LÍNEA
   integrations: [
     tailwind(), 
-    robotsTxt(),
-    netlify() // <--- 3. AÑADIR EL ADAPTADOR
+    robotsTxt(), 
+    netlify() // <-- 3. AÑADE EL ADAPTADOR AQUÍ
   ],
   site: "https://carvinviera-dev-dd6e0c.netlify.app/",
   vite: {
