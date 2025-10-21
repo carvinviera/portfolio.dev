@@ -5,6 +5,7 @@ import Tailwind from "./icons/Tailwind.astro"
 import NodeJSIcon from "./icons/NodeJS.astro"
 import PlaywrightIcon from "./icons/Playwright.astro"
 import JavaScriptIcon from "./icons/JavaScript.astro"
+import netIcon from "./icons/C.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
 
@@ -34,6 +35,11 @@ const TAGS = {
     class: "bg-[#efd81d] text-black",
     icon: JavaScriptIcon,
   },
+  NET: {
+    name: ".NET C#",
+    class: "bg-[#efd81d] text-black",
+    icon: netIcon,
+  },
 }
 const PROJECTS = [
   {
@@ -46,13 +52,22 @@ const PROJECTS = [
     tags: [TAGS.NODE, TAGS.JAVASCRIPT, TAGS.PLAYWRIGHT],
   },
   {
-    title: "AdventJS - Retos de programación con JavaScript y TypeScript",
+    title: "Ready Cash",
     description:
-      "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://adventjs.dev",
-    image: "/projects/adventjs.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+      "Proyecto en el que se transformó el modelo de negocio de tarjetas recargables a un sistema integral de pagos digitales con gestión de wallets. Se implementó la integración entre múltiples wallets mediante APIs, permitiendo pagos y transferencias internacionales de forma segura. Además, se mejoraron los módulos de reportes, seguridad y gestión de claves/tokens, e incorporaron nuevas integraciones con proveedores de pago globales.",
+    link: "https://pm.readycash.com/",
+    github: "https://github.com/carvinviera/pm",
+    image: "/projects/ReadyCash.png",
+    tags: [TAGS.NODE, TAGS.JAVASCRIPT, TAGS.NET],
   },
+  // {
+  //   title: "AdventJS - Retos de programación con JavaScript y TypeScript",
+  //   description:
+  //     "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
+  //   link: "https://adventjs.dev",
+  //   image: "/projects/adventjs.webp",
+  //   tags: [TAGS.NEXT, TAGS.TAILWIND],
+  // },
 ]
 ---
 
@@ -62,7 +77,7 @@ const PROJECTS = [
     <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
   <div class="w-full md:w-1/2">
     <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
-      <img alt="Recién llegado vs 5 años en Nueva Zelanda" class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
+      <img alt="" class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
     </div>
   </div>
 
