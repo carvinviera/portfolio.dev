@@ -1,5 +1,5 @@
 # build output
-
+.dist/
 # generated types
 .astro/
 
@@ -22,3 +22,5 @@ bun.*
 
 package-lock.json
 pnpm-lock.yaml
+# Local Netlify folder
+.netlify
