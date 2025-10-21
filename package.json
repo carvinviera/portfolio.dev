@@ -11,9 +11,10 @@
   },
   "dependencies": {
     "@astrojs/check": "latest",
-    "@astrojs/tailwind": "latest",
+    "@astrojs/netlify": "^6.5.13",
+    "@astrojs/tailwind": "^6.0.2",
     "@fontsource-variable/onest": "5.0.2",
-    "astro": "latest",
+    "astro": "^5.14.7",
     "astro-robots-txt": "latest",
     "tailwindcss": "latest",
     "typescript": "latest"
